@@ -152,6 +152,7 @@ nav {
     font-family: myFont;
     font-weight: bolder;
     letter-spacing: 2vw;
+    pointer-events: none;
 }
 
 #bottom-arrow {
