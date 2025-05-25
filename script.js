@@ -6,11 +6,26 @@ lenis.on('scroll', (e) => {
 
 lenis.on('scroll', ScrollTrigger.update)
 
+ScrollTrigger.refresh();
+
 gsap.ticker.add((time) => {
   lenis.raf(time * 1000)
 })
 
 gsap.ticker.lagSmoothing(0);
+
+window.addEventListener("load", () => {
+  // Initialize Lenis.js
+  const lenis = new Lenis();
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // Initialize GSAP animations
+  initGSAPAnimations();
+});
 
 const cursor = document.querySelector("#cursor");
 
