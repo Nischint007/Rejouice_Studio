@@ -1,0 +1,1301 @@
+@font-face {
+    font-family: myFont;
+    src: url(SuisseIntl-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+#page1 {
+    width: 100%;
+    height: 90vh;
+    background-color: #000000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page3 {
+    width: 100%;
+    height: 150vh;
+    background-color: #000000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page4 {
+    width: 100%;
+    height: 130vh;
+    background-color: #000000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page5 {
+    width: 100%;
+    height: 120vh;
+    background-color: #000000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page6 {
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page7 {
+    width: 100%;
+    height: 170vh;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#page8 {
+    width: 100%;
+    height: 130vh;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#left-nav {
+    display: flex;
+    align-items: center;
+}
+
+#left-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-family: myFont;
+}
+
+#middle-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+#middle-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: myFont;
+}
+
+#middle-nav #grey {
+    color: gray;
+}
+
+#right-nav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#right-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: myFont;
+}
+
+#right-nav a i {
+    font-size: 1.3vw;
+}
+
+#heading1 {
+    color: white;
+    position: absolute;
+    font-size: 22vw;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: myFont;
+    font-weight: bolder;
+    letter-spacing: 2vw;
+}
+
+#bottom-arrow {
+    color: white;
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-size: 3vw;
+}
+
+#heading2 {
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-family: myFont;
+    font-size: 1.5vw;
+}
+
+#heading3 {
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-family: myFont;
+    font-size: 1.5vw;
+}
+
+#video-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3vw;
+    font-family: myFont;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#heading4 {
+    color: white;
+    font-family: myFont;
+    font-size: 4vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tagline {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-family: myFont;
+    white-space: nowrap;
+}
+
+#tagline2 {
+    color: white;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-family: myFont;
+    white-space: nowrap;
+}
+
+#tagline3 {
+    color: white;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.2vw;
+    font-family: myFont;
+    white-space: nowrap;
+}
+
+#tagline3 a {
+    color: white;
+    text-decoration: 3px underline white;
+}
+
+#tagline3 a:hover {
+    text-decoration: none;
+    transition: all 1s ease-in;
+}
+
+#box {
+    width: 95vw;
+    height: 60vh;
+    border-top: 2px solid gray;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#heading5 {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 40%;
+    left: 2.5%;
+    transform: translateY(-50%);
+}
+
+#tagline4 {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+
+#tagline5 {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+
+#tagline6 {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+
+#tagline7 {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+
+#tagline-btn {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+
+#tagline-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+#tagline-btn i {
+    font-size: 2vw;
+}
+
+#img-container {
+    width: 95%;
+    height: 100vh;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page4-tagline {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 3%;
+    left: 2.5%;
+    transform: translateY(-50%);
+}
+
+#page4-tagline2 {
+    color: white;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 3%;
+    right: 2.5%;
+    transform: translateY(-50%);
+}
+
+#page4-tagline2 i {
+    font-size: 2vw;
+}
+
+#cursor {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: silver;
+    z-index: 999;
+    position: fixed;
+    overflow: hidden;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1vw;
+    font-family: myFont;
+    opacity: 0;
+}
+
+#cursor i {
+    font-size: 1.5vw;
+}
+
+#cursor video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page5-container {
+    width: 46vw;
+    height: 110vh;
+    position: absolute;
+    top: 40%;
+    left: 2.5%;
+    transform: translateY(-50%);
+}
+
+#page5-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page5-container-2 {
+    width: 46vw;
+    height: 110vh;
+    position: absolute;
+    top: 40%;
+    right: 2.5%;
+    transform: translateY(-50%);
+}
+
+#page5-container-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#loader {
+    width: 100%;
+    height: 500vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#loader-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: black;
+    font-size: 2.5vw;
+    font-family: myFont;
+    white-space: nowrap;
+}
+
+#loader-text-2 {
+    position: absolute;
+    top: 1.5%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: black;
+    font-size: 2.5vw;
+    font-family: myFont;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+#page6-heading {
+    color: black;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    font-family: myFont;
+    font-weight: 100;
+}
+
+#page6-video {
+    width: 63vw;
+    height: 63vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    will-change: transform;
+    transform-origin: center center;
+}
+
+#page6-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page7-heading {
+    color: #000000;
+    font-size: 6vw;
+    font-family: myFont;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+#page7-box-1 {
+    width: 90vw;
+    height: 40vh;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: translateY(-50%);
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page7-box-2 {
+    width: 90vw;
+    height: 40vh;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sub-heading-1 {
+    color: #000000;
+    font-family: myFont;
+    font-size: 2vw;
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+#sub-heading-2 {
+    color: #000000;
+    font-family: myFont;
+    font-size: 2vw;
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+#sub-heading-3 {
+    color: #000000;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    transform: translateY(-50%);
+    margin-right: 0.3vw;
+}
+
+#sub-heading-4 {
+    color: #000000;
+    font-family: myFont;
+    font-size: 2vw;
+    position: absolute;
+    top: 12%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+#sub-heading-5 {
+    color: #000000;
+    font-family: myFont;
+    font-size: 2vw;
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+#sub-heading-6 {
+    color: #000000;
+    font-family: myFont;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    transform: translateY(-50%);
+    margin-right: 0.3vw;
+}
+
+#heading-container {
+    width: 24vw;
+    height: 8vh;
+    gap: 1vw;
+    overflow: hidden;
+    position: absolute;
+    top: 85.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#main-heading {
+    color: black;
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: myFont;
+    transition: transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+#main-heading a {
+    color: black;
+}
+
+#hover-heading {
+    color: black;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: myFont;
+    transition: transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+#hover-heading a {
+    color: black;
+}
+
+#heading-container:hover #main-heading {
+    transform: translate(-50%, -250%);
+}
+
+#heading-container:hover #hover-heading {
+    transform: translate(-50%, -170%);
+}
+
+#page8-heading {
+    color: white;
+    font-size: 3vw;
+    font-family: myFont;
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+#page8-heading-2 {
+    color: white;
+    font-size: 3vw;
+    font-family: myFont;
+    position: absolute;
+    top: 8%;
+    left: 17%;
+    transform: translateY(-50%);
+}
+
+#page8-heading-bottom {
+    color: white;
+    font-size: 18vw;
+    font-weight: bolder;
+    font-family: myFont;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#page8-heading-bottom span {
+    display: inline-block;
+}
+
+#page8 nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    gap: 0.5vw;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+#page8 nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: myFont;
+}
+
+#nav-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    flex-direction: column;
+    gap: 0.8vw;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+#nav-2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: myFont;
+}
+
+#page8-heading-3 {
+    color: white;
+    font-size: 2vw;
+    font-family: myFont;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+#page8-heading-4 {
+    color: white;
+    font-size: 1.5vw;
+    font-family: myFont;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #left-nav {
+        display: none;
+    }
+
+    #left-nav a {
+        display: none;
+    }
+
+    #middle-nav {
+        display: flex;
+        align-items: center;
+        gap: 3.5vw;
+    }
+
+    #middle-nav a {
+        color: white;
+        text-decoration: none;
+        font-family: myFont;
+    }
+
+    #middle-nav #grey {
+        color: gray;
+    }
+
+    #right-nav {
+        display: none;
+    }
+
+    #right-nav a {
+        display: none;
+    }
+
+    #right-nav a i {
+        display: none;
+    }
+
+    #loader-text {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        color: black;
+        font-size: 5vw;
+        font-family: myFont;
+        white-space: nowrap;
+    }
+
+    #loader-text-2 {
+        position: absolute;
+        top: 1.5%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 5vw;
+        font-family: myFont;
+        white-space: nowrap;
+        font-weight: bolder;
+    }
+
+    #heading2 {
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 3%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        font-family: myFont;
+        font-size: 3.5vw;
+    }
+
+    #heading3 {
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 40%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        font-family: myFont;
+        font-size: 3.5vw;
+    }
+
+    #bottom-arrow {
+        color: white;
+        position: absolute;
+        top: 90%;
+        right: 2%;
+        transform: translateY(-50%);
+        font-size: 6vw;
+    }
+
+    #page2 {
+        width: 100%;
+        height: 85vh;
+        background-color: #000000;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    #video-container {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3vw;
+        font-family: myFont;
+    }
+
+    #heading4 {
+        color: white;
+        font-family: myFont;
+        font-size: 7vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #tagline {
+        color: white;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5vw;
+        font-family: myFont;
+        white-space: nowrap;
+    }
+
+    #tagline2 {
+        color: white;
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4.2vw;
+        font-family: myFont;
+        white-space: nowrap;
+        overflow-x: hidden;
+    }
+
+    #tagline3 {
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4.2vw;
+        font-family: myFont;
+        white-space: nowrap;
+    }
+
+    #tagline3 a {
+        color: white;
+        text-decoration: 3px underline white;
+    }
+
+    #tagline3 a:hover {
+        display: none;
+    }
+
+    #cursor {
+        display: none;
+    }
+
+    #heading5 {
+        color: white;
+        font-family: myFont;
+        font-size: 3vw;
+        position: absolute;
+        top: 42%;
+        left: 2.5%;
+        transform: translateY(-50%);
+    }
+
+    #tagline4 {
+        color: white;
+        font-family: myFont;
+        font-size: 3vw;
+        position: absolute;
+        top: 42%;
+        left: 58%;
+        transform: translateY(-50%);
+    }
+
+    #tagline5 {
+        color: white;
+        font-family: myFont;
+        font-size: 3.5vw;
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #tagline6 {
+        color: white;
+        font-family: myFont;
+        font-size: 4vw;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #tagline7 {
+        color: white;
+        font-family: myFont;
+        font-size: 4vw;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #tagline-btn {
+        color: white;
+        font-family: myFont;
+        font-size: 5vw;
+        position: absolute;
+        top: 91%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #tagline-btn a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #tagline-btn i {
+        font-size: 6vw;
+    }
+
+    #page4-tagline {
+        color: white;
+        font-family: myFont;
+        font-size: 3vw;
+        position: absolute;
+        top: 3%;
+        left: 2.5%;
+        transform: translateY(-50%);
+    }
+
+    #page4-tagline2 {
+        color: white;
+        font-family: myFont;
+        font-size: 3vw;
+        position: absolute;
+        top: 3%;
+        right: 2.5%;
+        transform: translateY(-50%);
+    }
+
+    #page4-tagline2 i {
+        font-size: 4vw;
+    }
+
+    #img-container {
+        width: 95%;
+        height: 100vh;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #page5-container {
+        width: 93vw;
+        height: 73vh;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #page5-container-2 {
+        width: 93vw;
+        height: 60vh;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #page6-heading {
+        color: black;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18vw;
+        font-family: myFont;
+        font-weight: 100;
+    }
+
+    #page6-video {
+        width: 63vw;
+        height: 70vh;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        will-change: transform;
+        transform-origin: center center;
+    }
+
+    #page7-heading {
+        color: #000000;
+        font-size: 13vw;
+        font-family: myFont;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    #page7-box-1 {
+        width: 90vw;
+        height: 40vh;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top: 2px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page7-box-2 {
+        width: 90vw;
+        height: 40vh;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sub-heading-1 {
+        color: #000000;
+        font-family: myFont;
+        font-size: 6.5vw;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    #sub-heading-2 {
+        color: #000000;
+        font-family: myFont;
+        font-size: 6.5vw;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    #sub-heading-3 {
+        color: #000000;
+        font-family: myFont;
+        font-size: 3vw;
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-right: 0.3vw;
+    }
+
+    #sub-heading-4 {
+        color: #000000;
+        font-family: myFont;
+        font-size: 6vw;
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    #sub-heading-5 {
+        color: #000000;
+        font-family: myFont;
+        font-size: 6vw;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #sub-heading-6 {
+        color: #000000;
+        font-family: myFont;
+        font-size: 3vw;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #heading-container {
+        width: 50vw;
+        height: 8vh;
+        gap: 1vw;
+        overflow: hidden;
+        position: absolute;
+        top: 85.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #main-heading {
+        color: black;
+        font-size: 7vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-family: myFont;
+        transition: transform 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        overflow: hidden;
+    }
+
+    #main-heading a {
+        color: black;
+    }
+
+    #hover-heading {
+        display: none;
+    }
+
+    #hover-heading a {
+        color: black;
+    }
+
+    #heading-container:hover #main-heading {
+        transform: none;
+    }
+
+    #heading-container:hover #hover-heading {
+        transform: none;
+    }
+
+    #page8 {
+        width: 100%;
+        height: 70vh;
+        background-color: black;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    #page8-heading {
+        color: white;
+        font-size: 5vw;
+        font-family: myFont;
+        position: absolute;
+        top: 12%;
+        left: 4%;
+        transform: translateY(-50%);
+    }
+
+    #page8-heading-2 {
+        color: white;
+        font-size: 5vw;
+        font-family: myFont;
+        position: absolute;
+        top: 12%;
+        left: 31%;
+        transform: translateY(-50%);
+    }
+
+    #page8-heading-bottom {
+        display: none;
+    }
+
+    #page8-heading-bottom span {
+        display: none;
+    }
+
+    #page8 nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+        gap: 2vw;
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
+
+    #page8 nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 4.5vw;
+        font-family: myFont;
+    }
+
+    #nav-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        flex-direction: column;
+        gap: 3vw;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateY(-50%,-50%);
+    }
+
+    #nav-2 a {
+        color: white;
+        text-decoration: none;
+        font-size: 4vw;
+        font-family: myFont;
+    }
+
+    #page8-heading-3 {
+        color: white;
+        font-size: 4vw;
+        font-family: myFont;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        white-space: nowrap;
+    }
+}
