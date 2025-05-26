@@ -38,8 +38,8 @@ document.addEventListener("mousemove", function (e) {
     ease: "slow.out"
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-   const tl = gsap.timeline();
+
+const tl = gsap.timeline();
 const headings = document.querySelectorAll("#loader-text span");
 
 tl.from("#loader-text-2", {
@@ -123,7 +123,6 @@ tl.from("#video-container video", {
   ease: "slow.out"
 }, "anim");
 
-});
 const sound = new Howl({
   src: ["Mouse_Click_Sound.mp3"],
   volume: 0.15
