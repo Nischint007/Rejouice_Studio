@@ -27,13 +27,6 @@ window.addEventListener("load", () => {
   initGSAPAnimations();
 });
 
-document.fonts.ready.then(() => {
-  document.getElementById('loader').style.display = 'none';
-  setTimeout(() => {
-    document.querySelector('main').style.visibility = 'visible';
-  }, 30);
-});
-
 const cursor = document.querySelector("#cursor");
 
 let cursorInitialized = false;
