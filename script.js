@@ -27,6 +27,13 @@ window.addEventListener("load", () => {
   initGSAPAnimations();
 });
 
+document.fonts.ready.then(() => {
+  document.getElementById('loader').style.display = 'none';
+  setTimeout(() => {
+    document.querySelector('main').style.visibility = 'visible';
+  }, 30);
+});
+
 const cursor = document.querySelector("#cursor");
 
 let cursorInitialized = false;
@@ -57,13 +64,13 @@ const headings = document.querySelectorAll("#loader-text span");
 tl.from("#loader-text-2", {
   opacity: 0,
   y: -40,
-  duration: 0.6,
+  duration: 1,
   ease: "slow.out"
 });
 
 tl.from(headings, {
   x: -200,
-  duration: 0.35,
+  duration: 0.6,
   opacity: 0,
   ease: "slow.out",
   stagger: 0.5,
@@ -72,7 +79,7 @@ tl.from(headings, {
 tl.to("#loader-text-2", {
   opacity: 0,
   y: -40,
-  duration: 0.8,
+  duration: 1,
   ease: "slow.out"
 });
 
@@ -80,14 +87,14 @@ tl.to(headings, {
   y: -40,
   opacity: 0,
   ease: "slow.out",
-  duration: 0.6,
-  stagger: 0.28
+  duration: 0.75,
+  stagger: 0.3
 });
 
 tl.to("#loader", {
   top: "100%",
   opacity: 0,
-  duration: 0.75,
+  duration: 0.8,
   ease: "slow.out"
 });
 
@@ -105,7 +112,7 @@ tl.fromTo("#heading1",
   {
     y: 0,
     skewY: 0,
-    duration: 0.5,
+    duration: 0.7,
     opacity: 1,
     ease: "slow.out"
   });
