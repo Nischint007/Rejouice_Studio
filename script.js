@@ -193,7 +193,6 @@ mm.add("(min-width: 800px)", () => {                                            
     gsap.to(cursor, {
       width: "",
       height: "",
-      mixblendMode: "",
       duration: 0.35,
       ease: "slow.out",
       borderRadius: "",
