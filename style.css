@@ -1,6 +1,7 @@
 @font-face {
     font-family: myFont;
-    src: url(SuisseIntl-Regular.ttf);
+    src: url(SuisseIntl-Regular.woff);
+    font-display: swap;
 }
 
 * {
