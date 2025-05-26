@@ -14,19 +14,6 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-window.addEventListener("load", () => {
-  // Initialize Lenis.js
-  const lenis = new Lenis();
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-
-  // Initialize GSAP animations
-  initGSAPAnimations();
-});
-
 const cursor = document.querySelector("#cursor");
 
 let cursorInitialized = false;
