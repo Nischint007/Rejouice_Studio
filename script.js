@@ -318,7 +318,7 @@ mm.add("(min-width: 800px)", () => {                                            
       start: "top 10%",
       end: "bottom 100%",
       scrub: 4,
-      once: true
+      toggleActions:"play none none none"
     }
   });
 });
