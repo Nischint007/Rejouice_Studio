@@ -14,6 +14,7 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
+
 const cursor = document.querySelector("#cursor");
 
 let cursorInitialized = false;
