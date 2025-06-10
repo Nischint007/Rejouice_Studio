@@ -187,6 +187,7 @@ mm.add("(min-width: 800px)", () => {                                            
       backgroundColor: "#F26B0F",
       color: "white",
       whiteSpace: "nowrap",
+      paddingRight: "0vw"
     })
     cursor.innerHTML = '<i class="ri-play-mini-fill"></i> Play Reel'
   });
