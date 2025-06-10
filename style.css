@@ -648,7 +648,7 @@ nav {
 }
 
 #heading-container:hover #hover-heading {
-    transform: translate(-50%, -170%)
+    transform: translate(-50%, -170%);
 }
 
 #page8-heading {
