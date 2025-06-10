@@ -386,7 +386,7 @@ nav {
     pointer-events: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 1.1vw;
     font-family: myFont;
     opacity: 0;

@@ -45,13 +45,13 @@ const headings = document.querySelectorAll("#loader-text span");
 tl.from("#loader-text-2", {
   opacity: 0,
   y: -40,
-  duration: 1,
+  duration: 0.75,
   ease: "slow.out"
 });
 
 tl.from(headings, {
-  x: -200,
-  duration: 0.6,
+  left: -500,
+  duration: 0.5,
   opacity: 0,
   ease: "slow.out",
   stagger: 0.5,
@@ -60,7 +60,7 @@ tl.from(headings, {
 tl.to("#loader-text-2", {
   opacity: 0,
   y: -40,
-  duration: 1,
+  duration: 0.75,
   ease: "slow.out"
 });
 
@@ -75,7 +75,7 @@ tl.to(headings, {
 tl.to("#loader", {
   top: "100%",
   opacity: 0,
-  duration: 0.8,
+  duration: 0.75,
   ease: "slow.out"
 });
 
@@ -85,7 +85,7 @@ tl.to("#loader", {
 tl.from("#left-nav a", {
   opacity: 0,
   y: -40,
-  duration: 0.6,
+  duration: 0.5,
   ease: "slow.out"
 });
 tl.fromTo("#heading1",
@@ -93,7 +93,7 @@ tl.fromTo("#heading1",
   {
     y: 0,
     skewY: 0,
-    duration: 0.7,
+    duration: 0.6,
     opacity: 1,
     ease: "slow.out"
   });
