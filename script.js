@@ -50,7 +50,7 @@ tl.from("#loader-text-2", {
 });
 
 tl.from(headings, {
-  left: -500,
+  x: -500,
   duration: 0.5,
   opacity: 0,
   ease: "slow.out",
@@ -187,7 +187,6 @@ mm.add("(min-width: 800px)", () => {                                            
       backgroundColor: "#F26B0F",
       color: "white",
       whiteSpace: "nowrap",
-      paddingRight: "0.5vw"
     })
     cursor.innerHTML = '<i class="ri-play-mini-fill"></i> Play Reel'
   });
