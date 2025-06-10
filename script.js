@@ -179,13 +179,15 @@ mm.add("(min-width: 800px)", () => {                                            
 
   video.addEventListener("mouseenter", function (e) {
     gsap.to(cursor, {
-      width: "110px",
-      height: "110px",
+      width: "140px",
+      height: "140px",
       duration: 0.35,
       ease: "slow.out",
       borderRadius: "50%",
       backgroundColor: "#F26B0F",
       color: "white",
+      whiteSpace: "nowrap",
+      paddingRight: "0.5vw"
     })
     cursor.innerHTML = '<i class="ri-play-mini-fill"></i> Play Reel'
   });
