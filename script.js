@@ -287,19 +287,19 @@ mm.add("(min-width: 800px)", () => {                                            
   const bottomHeading = document.querySelectorAll("#page8-heading-bottom span");
 
   gsap.from(bottomHeading, {
-    y: -40,
+    y: 80,
     opacity: 0,
     duration: 2,
-    skewY: -40,
-    stagger: 0.3,
+    skewY: 40,
+    stagger: 0.15,
     ease: "power4.out",
     scrollTrigger: {
       trigger: "#page8",
       scroller: "body",
       start: "top 10%",
-      end: "bottom 100%",
-      scrub: 4,
-      toggleActions:"play none none none"
+      end: "bottom 110%",
+      once: true,
+      scrub: 5,
     }
   });
 });
