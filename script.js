@@ -95,7 +95,7 @@ tl.fromTo("#heading1",
     skewY: 0,
     duration: 0.6,
     opacity: 1,
-    ease: "slow.out"
+    ease: "sine.out"
   });
 tl.from("#heading2", {
   opacity: 0,
