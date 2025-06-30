@@ -45,7 +45,7 @@ const headings = document.querySelectorAll("#loader-text span");
 tl.from("#loader-text-2", {
   opacity: 0,
   y: -40,
-  duration: 0.75,
+  duration: 0.5,
   ease: "slow.out"
 });
 
@@ -60,7 +60,7 @@ tl.from(headings, {
 tl.to("#loader-text-2", {
   opacity: 0,
   y: -40,
-  duration: 0.75,
+  duration: 0.5,
   ease: "slow.out"
 });
 
@@ -68,14 +68,14 @@ tl.to(headings, {
   y: -40,
   opacity: 0,
   ease: "slow.out",
-  duration: 0.75,
+  duration: 0.5,
   stagger: 0.3
 });
 
 tl.to("#loader", {
   top: "100%",
   opacity: 0,
-  duration: 0.75,
+  duration: 0.5,
   ease: "slow.out"
 });
 
@@ -95,7 +95,8 @@ tl.fromTo("#heading1",
     skewY: 0,
     duration: 0.6,
     opacity: 1,
-    ease: "sine.out"
+    ease: "sine.out",
+    immediateRender: false
   });
 tl.from("#heading2", {
   opacity: 0,
