@@ -96,7 +96,6 @@ tl.fromTo("#heading1",
     duration: 0.6,
     opacity: 1,
     ease: "sine.out",
-    immediateRender: false
   });
 tl.from("#heading2", {
   opacity: 0,
