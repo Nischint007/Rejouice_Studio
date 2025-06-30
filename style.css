@@ -644,11 +644,11 @@ nav {
 }
 
 #heading-container:hover #main-heading {
-    transform: translate(-50%, -240%);
+    transform: translate(-50%, -230%);
 }
 
 #heading-container:hover #hover-heading {
-    transform: translate(-50%, -170%);
+    transform: translate(-50%, -150%);
 }
 
 #page8-heading {

@@ -25,7 +25,7 @@ document.addEventListener("mousemove", function (e) {
       x: e.clientX,
       y: e.clientY,
       opacity: 1,
-      ease: "slow.out",
+      ease: "power2.out",
       duration: 1
     });
     cursorInitialized = true;
